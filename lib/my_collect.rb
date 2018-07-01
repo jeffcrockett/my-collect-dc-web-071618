@@ -4,6 +4,7 @@ def my_collect(array)
   while index < array.length 
     new_val = yield array[index]
     new_array << new_val
+    index += 1
   end 
   new_array
 end
